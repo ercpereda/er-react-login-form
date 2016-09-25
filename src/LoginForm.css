@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+.loginform input[type=text].error, .loginform input[type=password].error {
+  border-color: #F44336;
+}
+
 .loginform button {
   background-color: #4CAF50;
   color: white;
@@ -47,6 +51,12 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+}
+
+.errorMessage {
+  margin-top: 0;
+  color: #F44336;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 300px) {

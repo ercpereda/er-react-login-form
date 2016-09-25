@@ -4,7 +4,7 @@ import LoginForm from './LoginForm';
 
 const template = (
   <div style={{ maxWidth: '600px' }}>
-    <LoginForm /> 
+    <LoginForm onSubmit={({ username, password }) => console.log(username, password)} />
   </div>
 );
 
