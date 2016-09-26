@@ -1,6 +1,6 @@
 {
   "name": "er-react-login-form",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/er-react-login-form.js",
   "scripts": {
