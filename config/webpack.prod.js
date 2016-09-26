@@ -1,5 +1,6 @@
 var commonConfig = require('./webpack.common');
 var webpackMerge = require('webpack-merge');
+var CopyPlugin = require('copy-webpack-plugin');
 var path = require('path');
 
 var config = webpackMerge(commonConfig, {
@@ -16,7 +17,13 @@ var config = webpackMerge(commonConfig, {
   externals: {
     'react': 'react',
     'classnames': 'classnames'
-  }
+  },
+
+  plugins: [
+    new CopyPlugin([
+      { from: 'src/avatar.png' }
+    ])
+  ]
 });
 
 module.exports = config;
